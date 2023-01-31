@@ -21,6 +21,11 @@ const options = {
 }
 const nodemailer = require("nodemailer");
 
+
+
+app.get("/", function (request, response) {
+    response.send("welcome to stackoverflow clone api🎉🎉🎉🎉🎉");
+});
 //1 Authenticate
 let authenticate = function (req, res, next) {
     if (req.headers.authorization) {
